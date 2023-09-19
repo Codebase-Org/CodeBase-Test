@@ -17,7 +17,8 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   //baseURL = "http://192.168.22.31:8080/codebase/api/";
-  baseURL = "http://localhost/codebase/api/";
+  baseURL = "http://91.101.23.138/codebase/api/";
+  //baseURLCapi = "";
 
   headers: HttpHeaders = new HttpHeaders({
     'Content-Type': 'application/json; charset=UTF-8'
@@ -54,6 +55,10 @@ export class ApiService {
 
   getTeam(data: Iaccount): Observable<Iaccount[]> {
     return this.http.get<Iaccount[]>(this.baseURL + 'profile/teams.php?id='+data.instructor_id+'&role_id='+data.role_id);
+  }
+
+  getAccounts(): Observable<Iaccount[]> {
+    return this.http.get<Iaccount[]>(this.baseURL + 'profile/profiles.php');
   }
 
   studentCounter(data: Iaccount): Observable<any> {

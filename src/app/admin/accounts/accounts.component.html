@@ -1,4 +1,15 @@
 <div class="container">
-  accounts works!
+  <div class="tools">
+    <button type="button" class="btn" title="New Account"><i class="fa fa-user-plus"></i></button>
+    <button type="button" class="btn" (click)="showDropdown()" title="Filter"><i class="fa fa-filter"></i>
+      <div class="dropdown" [ngClass]="{'show': isDropdownActive}">
+        <span data-id="All" #filter (click)="filterAccounts(filter)" class="dropdown-item">All</span>
+        <span data-id="Admin" #filter (click)="filterAccounts(filter)" class="dropdown-item">Admins</span>
+        <span data-id="Instructor" #filter (click)="filterAccounts(filter)" class="dropdown-item">Instructors</span>
+        <span data-id="Owner" #filter (click)="filterAccounts(filter)" class="dropdown-item">Owners</span>
+        <span data-id="Student" #filter (click)="filterAccounts(filter)" class="dropdown-item">Students</span>
+      </div>
+    </button>
+  </div>
 </div>
 

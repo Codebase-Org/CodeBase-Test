@@ -34,7 +34,8 @@ const routes: Routes = [
     Routes for admin will be going in here.
      */
       {path: 'dashboard', component: DashboardComponent},
-      {path: 'accounts', component: AccountsComponent}
+      {path: 'accounts', component: AccountsComponent},
+      {path: 'accounts/:role', component: AccountsComponent}
     ]}
 ];
 

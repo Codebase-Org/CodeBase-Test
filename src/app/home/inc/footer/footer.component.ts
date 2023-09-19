@@ -11,7 +11,7 @@ import {Icategory} from "../../../interfaces/icategory";
 export class FooterComponent implements OnInit {
 
   categories: Icategory[] = [];
-  logoPath: string = "http://localhost/codebase/assets/img/logo/";
+  logoPath: string = "http://91.101.23.138/codebase/assets/img/logo/";
   constructor(private api: ApiService, private router: Router) {
   }
 

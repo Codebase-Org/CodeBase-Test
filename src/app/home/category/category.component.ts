@@ -12,7 +12,7 @@ import {Itypes} from "../../interfaces/itypes";
 export class CategoryComponent implements OnInit {
 
   //picturePath: string = "http://192.168.22.31/codebase/assets/img/logo/";
-  picturePath: string = "http://localhost/codebase/assets/img/logo/";
+  picturePath: string = "http://91.101.23.138/codebase/assets/img/logo/";
 
   categories: Icategory[] = [];
   category: Icategory = {};
