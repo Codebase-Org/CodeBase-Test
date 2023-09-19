@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="forum-header"><h2>{{category.catname}} Forum</h2></div>
+  <div class="forum-toolbar">
+<!--    <button type="button" class="btn btn-create" id="btn-modal" (click)="toggleModal()"><i class="fa fa-plus"></i>Add Post</button>-->
+  </div>
+  <div class="posts-wrapper">
+    <div class="post-item" *ngFor="let item of posts">
+      <div class="col">
+        <span class="info"><label>Author:</label>{{item.username}}</span>
+        <span class="info"><label>Date:</label>{{item.post_time}}</span>
+        <span class="info"><label>Views:</label>{{item.post_views}}</span>
+        <span class="info"><label>Answers:</label>answers</span>
+        <span class="info"><label>Updated:</label>updated time</span>
+      </div>
+      <div class="col-big">
+        <span class="info-big">{{item.post_headline}}</span>
+        <span class="info-big">{{item.post_content}}</span>
+      </div>
+    </div>
+  </div>
+</div>

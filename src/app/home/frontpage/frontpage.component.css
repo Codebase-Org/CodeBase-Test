@@ -1,0 +1,71 @@
+.container {
+  width: 100vw;
+}
+
+.container.bg-gradient {
+  background: #353b65 url("http://localhost/codebase/assets/img/main-bg.jpg") center top no-repeat;
+}
+
+.container .search-wrapper {
+  margin: 0 auto;
+  width: 1170px;
+  min-height: 279px;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .search-wrapper div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .search-wrapper .search-headline {
+  margin: 0 0 5px 0;
+  padding: 0;
+  width: 100%;
+  font-size: 42px;
+  text-align: center;color: white;
+}
+
+.container .search-wrapper .search-subtext {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.container .search-wrapper .form-group-inline {
+  margin: 0 auto;
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid #112047;
+}
+
+.container .search-wrapper .form-group-inline .form-control {
+  padding: 10px;
+  width: 1000px;
+  border: 0;
+  outline: none;
+}
+
+.container .search-wrapper .form-group-inline .btn {
+  padding: 10px 25px;
+  width: auto;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.container .search-wrapper .form-group-inline .btn.btn-search {
+  background: #112047;
+  color: white;
+}
